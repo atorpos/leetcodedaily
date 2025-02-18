@@ -24,6 +24,7 @@ if __name__ == '__main__':
 
     intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
     print(sol2.merge(intervals))
+    print(sol2.merge_intervals(intervals))
 
     print(oatrial.get_key_identifier("baab"))
     print(oatrial.get_key_identifier("pop"))
@@ -32,5 +33,8 @@ if __name__ == '__main__':
     print(oatrial.calculate_min_total_wattage([4, 9, 2, 10, 3, 5, 3], 3))
 
     print(oatrial.get_maximum_greyness(["101","000","122","434"]))
+    center = [3, 1, 6, 8, 9]
+    destination = [2, 3, 1, 7, 9]
+    print(oatrial.calculate_minimum_distance(center, destination))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

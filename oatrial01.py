@@ -62,3 +62,15 @@ class oatrial:
                 max_greyness = max(max_greyness, greyness)
 
         return max_greyness
+
+    def calculate_minimum_distance(center: List[int], destination: List[int]) -> int:
+        # Step 1: Sort both arrays
+        center.sort()
+        destination.sort()
+
+        # Step 2: Calculate the sum of absolute differences
+        total_lag = 0
+        for i in range(len(center)):
+            total_lag += abs(center[i] - destination[i])
+
+        return total_lag
