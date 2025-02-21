@@ -29,10 +29,7 @@ This repository is created to:
 ## 📂 Folder Structure
 ````
 LeetCodeDaily/
-│── Easy/
-│── Medium/
-│── Hard/
-│── README.md
+│── Week1
 
 ````
 Each folder contains solutions categorized by difficulty.
