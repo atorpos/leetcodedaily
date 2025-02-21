@@ -1,5 +1,6 @@
 # This is a sample Python script.
 from Solution1 import Solution1
+from Week1.twosum import twosum
 from solution2 import solution2
 from oatrial01 import oatrial
 from surroundingzero import surrandingzero
@@ -19,6 +20,7 @@ if __name__ == '__main__':
     sol2 = solution2()
     oatrial01 = oatrial()
     surrandingzero01 = surrandingzero()
+    twosum = twosum()
     print_hi('PyCharm')
     candies1 = [1,3,4,5,2]
     extraCandies = 2
@@ -61,5 +63,9 @@ if __name__ == '__main__':
     paragraph = "Bob hit the ball, the hit Ball flew far away it was hit"
 
     print(surrandingzero01.mostCommonWord(paragraph, ["hit"]))
+
+    nums = [2,7,11,5]
+    target = 9
+    print(twosum.twoSum(nums, target))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
