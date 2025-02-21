@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 
 
@@ -92,9 +93,22 @@ class surrandingzero:
         return len(partition_array)
 
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
-        sentence_array = paragraph.lower().split()
 
-        return sentence_array[0]
+        for banned_word in banned:
+            if banned_word == " ":
+                continue
+            paragraph = paragraph.replace(banned_word, "")
+
+        sentence_array = paragraph.lower().split()
+        grouped_word = {}
+        for word in sentence_array:
+            if word not in grouped_word:
+                grouped_word[word] = []
+            grouped_word[word].append(word)
+
+        result = [(word, len(group)) for word, group in grouped_word.items()]
+        more_apper = max(result, key=lambda x: x[1])[0]
+        return more_apper
 
 
 

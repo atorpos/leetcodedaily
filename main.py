@@ -58,7 +58,7 @@ if __name__ == '__main__':
     letterwords = "seacfcde"
     print(surrandingzero01.partitionString(letterwords))
 
-    paragraph = "Bob hit a ball, the hit Ball flew far adter it was hit."
+    paragraph = "Bob hit the ball, the hit Ball flew far away it was hit"
 
     print(surrandingzero01.mostCommonWord(paragraph, ["hit"]))
 
