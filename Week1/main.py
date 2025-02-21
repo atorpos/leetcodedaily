@@ -1,5 +1,6 @@
 # This is a sample Python script.
 from Solution1 import Solution1
+from Week1.mergearray import mergearray
 from Week1.twosum import twosum
 from solution2 import solution2
 from oatrial01 import oatrial
@@ -21,6 +22,7 @@ if __name__ == '__main__':
     oatrial01 = oatrial()
     surrandingzero01 = surrandingzero()
     twosum = twosum()
+    mergearray = mergearray()
     print_hi('PyCharm')
     candies1 = [1,3,4,5,2]
     extraCandies = 2
@@ -67,5 +69,12 @@ if __name__ == '__main__':
     nums = [2,7,11,5]
     target = 9
     print(twosum.twoSum(nums, target))
+
+    num1 = [1,2,3,0,0,0]
+    num2 = [2,5,6]
+    m = 3
+    n = 3
+
+    mergearray.merge(num1, m, num2, n)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
