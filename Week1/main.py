@@ -1,7 +1,10 @@
 # This is a sample Python script.
+from AMZA_OA.code02 import Code02
 from Solution1 import Solution1
 from Week1.mergearray import mergearray
 from Week1.twosum import twosum
+from lexicographic.lexicographic01 import lexicographic01
+from lexicographic.lexicographic02_subarray import lexicographic02_subarray
 from solution2 import solution2
 from oatrial01 import oatrial
 from surroundingzero import surrandingzero
@@ -16,6 +19,8 @@ def print_hi(name):
 
 
 # Press the green button in the gutter to run the script.
+
+
 if __name__ == '__main__':
     sol = Solution1()
     sol2 = solution2()
@@ -23,6 +28,10 @@ if __name__ == '__main__':
     surrandingzero01 = surrandingzero()
     twosum = twosum()
     mergearray = mergearray()
+    codetwo = Code02()
+    lex_01 = lexicographic01()
+    lex_02 = lexicographic02_subarray()
+
     print_hi('PyCharm')
     candies1 = [1,3,4,5,2]
     extraCandies = 2
@@ -76,5 +85,11 @@ if __name__ == '__main__':
     n = 3
 
     mergearray.merge(num1, m, num2, n)
+    print(codetwo.getMinimumString("04829"))
+
+    print(lex_01.lexicalOrder(11))
+
+    print(lex_02.numOfSubarrays([2,4,6]))
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
