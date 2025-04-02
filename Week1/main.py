@@ -3,11 +3,17 @@ from AMZA_OA.code02 import Code02
 from Solution1 import Solution1
 from Week1.mergearray import mergearray
 from Week1.twosum import twosum
+from Week3.diameterBinaryTree import diameterBinaryTree
+from Week3.longestcommonprefix import longestCommonPrefix
+from Week3.palindromenumber import palindromenumber
+from Week3.reorganizesting import reorganizestring
+from Week3.climbstairs import climbStairs
 from lexicographic.lexicographic01 import lexicographic01
 from lexicographic.lexicographic02_subarray import lexicographic02_subarray
 from solution2 import solution2
 from oatrial01 import oatrial
 from surroundingzero import surrandingzero
+from Week3.validAnagram import validAnagram
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -31,6 +37,13 @@ if __name__ == '__main__':
     codetwo = Code02()
     lex_01 = lexicographic01()
     lex_02 = lexicographic02_subarray()
+    palindrom = palindromenumber()
+    longestCommonPrefix = longestCommonPrefix()
+    climbStairs = climbStairs()
+    validAnagram = validAnagram()
+    diameterBinaryTree = diameterBinaryTree()
+
+    reorganstring = reorganizestring()
 
     print_hi('PyCharm')
     candies1 = [1,3,4,5,2]
@@ -90,6 +103,16 @@ if __name__ == '__main__':
     print(lex_01.lexicalOrder(11))
 
     print(lex_02.numOfSubarrays([2,4,6]))
+
+    reorganstring.reorganizeString("aab")
+
+    palindrom.isPalindrome(121)
+
+    print(longestCommonPrefix.longestCommonPrefix(["",""]))
+    print(f"the climbStairs is {climbStairs.climbstairs(44)}")
+    print(f"the validAnagram is {validAnagram.isAnagram('anagram', 'nagaram')}")
+
+    print(f"the diameterBinaryTree is {diameterBinaryTree.diameterOfBinaryTree([1,2,3,4,5])}")
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
