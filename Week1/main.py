@@ -16,6 +16,7 @@ from solution2 import solution2
 from oatrial01 import oatrial
 from surroundingzero import surrandingzero
 from Week3.validAnagram import validAnagram
+from Week3.arrayRankTransform import arrayRankTransform
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -46,6 +47,7 @@ if __name__ == '__main__':
     diameterBinaryTree = diameterBinaryTree()
     containsDuplicateii = containsDuplicateii()
     minimumAbsoluteDifference = minimumAbsoluteDifference()
+    arrayRankTransform = arrayRankTransform()
 
     reorganstring = reorganizestring()
 
@@ -108,8 +110,6 @@ if __name__ == '__main__':
 
     print(lex_02.numOfSubarrays([2,4,6]))
 
-    reorganstring.reorganizeString("aab")
-
     palindrom.isPalindrome(121)
 
     print(longestCommonPrefix.longestCommonPrefix(["",""]))
@@ -119,6 +119,9 @@ if __name__ == '__main__':
     # print(f"the diameterBinaryTree is {diameterBinaryTree.diameterOfBinaryTree([1,2,3,4,5])}")
     print(f"contains duplicate ii is {containsDuplicateii.containsNearbyDuplicate([1,2,3,1], 3)}")
     print(f"Minim is {minimumAbsoluteDifference.minimumabsolutedifference([4,2,3,1])}")
+
+    print(f"the reorganizestring is {reorganstring.reorganizeString('aab')}")
+    print(f"the array Ranks Trans is {arrayRankTransform.arrayranktransform([37,12,28,9,100,56,80,5,12])}")
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
