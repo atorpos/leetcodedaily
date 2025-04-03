@@ -3,8 +3,10 @@ from AMZA_OA.code02 import Code02
 from Solution1 import Solution1
 from Week1.mergearray import mergearray
 from Week1.twosum import twosum
+from Week3.containsDuplicateii import containsDuplicateii
 from Week3.diameterBinaryTree import diameterBinaryTree
 from Week3.longestcommonprefix import longestCommonPrefix
+from Week3.minimumAbsoluteDifference import minimumAbsoluteDifference
 from Week3.palindromenumber import palindromenumber
 from Week3.reorganizesting import reorganizestring
 from Week3.climbstairs import climbStairs
@@ -42,6 +44,8 @@ if __name__ == '__main__':
     climbStairs = climbStairs()
     validAnagram = validAnagram()
     diameterBinaryTree = diameterBinaryTree()
+    containsDuplicateii = containsDuplicateii()
+    minimumAbsoluteDifference = minimumAbsoluteDifference()
 
     reorganstring = reorganizestring()
 
@@ -112,7 +116,9 @@ if __name__ == '__main__':
     print(f"the climbStairs is {climbStairs.climbstairs(44)}")
     print(f"the validAnagram is {validAnagram.isAnagram('anagram', 'nagaram')}")
 
-    print(f"the diameterBinaryTree is {diameterBinaryTree.diameterOfBinaryTree([1,2,3,4,5])}")
+    # print(f"the diameterBinaryTree is {diameterBinaryTree.diameterOfBinaryTree([1,2,3,4,5])}")
+    print(f"contains duplicate ii is {containsDuplicateii.containsNearbyDuplicate([1,2,3,1], 3)}")
+    print(f"Minim is {minimumAbsoluteDifference.minimumabsolutedifference([4,2,3,1])}")
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
