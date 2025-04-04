@@ -1,5 +1,7 @@
 # This is a sample Python script.
+from AMZA_OA.cinemaEntries import cinemaEntries
 from AMZA_OA.code02 import Code02
+from AMZA_OA.findMinimumTime import findMinimumTime
 from Solution1 import Solution1
 from Week1.mergearray import mergearray
 from Week1.twosum import twosum
@@ -48,6 +50,8 @@ if __name__ == '__main__':
     containsDuplicateii = containsDuplicateii()
     minimumAbsoluteDifference = minimumAbsoluteDifference()
     arrayRankTransform = arrayRankTransform()
+    cinemaEntries = cinemaEntries()
+    findMinimumTime = findMinimumTime()
 
     reorganstring = reorganizestring()
 
@@ -122,6 +126,8 @@ if __name__ == '__main__':
 
     print(f"the reorganizestring is {reorganstring.reorganizeString('aab')}")
     print(f"the array Ranks Trans is {arrayRankTransform.arrayranktransform([37,12,28,9,100,56,80,5,12])}")
+    print(f"cinema Entries is {cinemaEntries.cinemaEntries([1,10,100], [1,10,100], [1,10,100])}")
+    print(findMinimumTime.findMinimumTime("bcdb",[2,4,1,3],10))
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
