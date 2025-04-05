@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
     print(f"the reorganizestring is {reorganstring.reorganizeString('aab')}")
     print(f"the array Ranks Trans is {arrayRankTransform.arrayranktransform([37,12,28,9,100,56,80,5,12])}")
-    print(f"cinema Entries is {cinemaEntries.cinemaEntries([1,10,100], [1,10,100], [1,10,100])}")
+    print(f"cinema Entries is {cinemaEntries.cinemaentries([1,2,4], [2,2,1], [1,2,3])}")
     print(findMinimumTime.findMinimumTime("bcdb",[2,4,1,3],10))
 
 
