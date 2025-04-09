@@ -12,6 +12,10 @@ from Week3.minimumAbsoluteDifference import minimumAbsoluteDifference
 from Week3.palindromenumber import palindromenumber
 from Week3.reorganizesting import reorganizestring
 from Week3.climbstairs import climbStairs
+from Week4.dailyTemperatures import dailyTemperatures
+from hackerrank_mock.findMinChanges import findMinChanges
+from hackerrank_mock.getTransactionTripletCount import getTransactionTripletCount
+from hackerrank_mock.showInProduction import showinproduction
 from lexicographic.lexicographic01 import lexicographic01
 from lexicographic.lexicographic02_subarray import lexicographic02_subarray
 from solution2 import solution2
@@ -19,6 +23,7 @@ from oatrial01 import oatrial
 from surroundingzero import surrandingzero
 from Week3.validAnagram import validAnagram
 from Week3.arrayRankTransform import arrayRankTransform
+from hackerrank_mock.countMinimumOperations import countMinOperations
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -52,6 +57,11 @@ if __name__ == '__main__':
     arrayRankTransform = arrayRankTransform()
     cinemaEntries = cinemaEntries()
     findMinimumTime = findMinimumTime()
+    dailyTemperatures = dailyTemperatures()
+    findMinChanges = findMinChanges()
+    showProductions = showinproduction()
+    getTransactionTripletCount = getTransactionTripletCount()
+    countMinOperations = countMinOperations()
 
     reorganstring = reorganizestring()
 
@@ -126,8 +136,23 @@ if __name__ == '__main__':
 
     print(f"the reorganizestring is {reorganstring.reorganizeString('aab')}")
     print(f"the array Ranks Trans is {arrayRankTransform.arrayranktransform([37,12,28,9,100,56,80,5,12])}")
-    print(f"cinema Entries is {cinemaEntries.cinemaentries([1,2,4], [2,2,1], [1,2,3])}")
+    # print(f"cinema Entries is {cinemaEntries.cinemaentries([1,2,4], [2,2,1], [1,2,3])}")
     print(findMinimumTime.findMinimumTime("bcdb",[2,4,1,3],10))
+
+    print(f"Daily Temperatures is {dailyTemperatures.dailytemperatures([73,74,75,71,69,72,76,73])}")
+
+    print(findMinChanges.findMinChanges("bdabacdbdac", 4))
+    # print(showProductions.showsInProduction(2019, -1))
+
+    print(f"get transaction {getTransactionTripletCount.getTransactionTripletCount([3,3,4,7,8], 5)}")
+    print(f"count mini, {countMinOperations.countMinOperations([50,55,60], [60,55,50,65])}")
+    # print((showinproduction.showsInProduction(2006, 2011)))
+
+    s = "abeaa"
+    hash = 0
+    for i in s:
+        hash = hash ^ ord(i)
+    print(hash)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
